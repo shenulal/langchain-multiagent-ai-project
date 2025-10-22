@@ -33,7 +33,7 @@ A sophisticated multi-agent AI system built with LangChain that provides intelli
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/shenulal/langchain-multiagent-ai-project.git
 cd langchain-sample-project
 ```
 
