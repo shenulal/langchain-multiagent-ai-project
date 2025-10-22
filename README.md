@@ -34,7 +34,7 @@ A sophisticated multi-agent AI system built with LangChain that provides intelli
 1. **Clone the repository**
 ```bash
 git clone https://github.com/shenulal/langchain-multiagent-ai-project.git
-cd langchain-sample-project
+cd langchain-multiagent-ai-project
 ```
 
 2. **Install dependencies**
@@ -179,7 +179,7 @@ python examples/example_queries.py
 ## 📁 Project Structure
 
 ```
-langchain-sample-project/
+langchain-multiagent-ai-project/
 ├── main.py                 # FastAPI application entry point
 ├── requirements.txt        # Python dependencies
 ├── .env.example           # Environment variables template
