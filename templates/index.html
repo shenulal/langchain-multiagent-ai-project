@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangChain Multi-Agent AI System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🤖 LangChain Multi-Agent AI</h1>
+            <p>Intelligent assistance with specialized agents for weather, research, and general queries</p>
+        </div>
+
+        <!-- Main Chat Interface -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>💬 Chat with AI Agents</h2>
+                <p>Ask questions about weather, news, calculations, or anything else!</p>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be added here dynamically -->
+            </div>
+
+            <!-- Loading Indicator -->
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Processing your request...</p>
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="textInput" 
+                        class="text-input" 
+                        placeholder="Type your message here... (e.g., 'What's the weather in London?' or 'Latest tech news')"
+                        autocomplete="off"
+                    >
+                </div>
+                
+                <div class="controls">
+                    <button id="sendBtn" class="btn btn-primary">📤 Send Message</button>
+                    <button id="voiceBtn" class="btn btn-voice">🎤 Voice Input</button>
+                    <button id="clearBtn" class="btn" style="background: #6c757d; color: white;">🗑️ Clear Chat</button>
+                </div>
+            </div>
+
+            <!-- Status Bar -->
+            <div class="status-bar" id="statusBar">
+                Ready
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features">
+            <div class="feature-card">
+                <h3>🌤️ Weather Agent</h3>
+                <p>Get current weather conditions and forecasts for any location worldwide. Ask about temperature, humidity, wind speed, and more.</p>
+                <small><strong>Try:</strong> "What's the weather in Tokyo?" or "Will it rain tomorrow in Paris?"</small>
+            </div>
+
+            <div class="feature-card">
+                <h3>📰 Research Agent</h3>
+                <p>Find the latest news, research information on any topic, and get comprehensive answers from multiple sources.</p>
+                <small><strong>Try:</strong> "Latest AI news" or "Tell me about quantum computing"</small>
+            </div>
+
+            <div class="feature-card">
+                <h3>🧮 General Agent</h3>
+                <p>Handle calculations, get current date/time, and assist with general questions and conversations.</p>
+                <small><strong>Try:</strong> "Calculate 15% of 250" or "What time is it?"</small>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎤 Voice Interface</h3>
+                <p>Interact using voice input and receive spoken responses. Perfect for hands-free operation and accessibility.</p>
+                <small><strong>Try:</strong> Click the voice button and speak your question naturally</small>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div style="background: white; padding: 20px; border-radius: 10px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: #007bff; margin-bottom: 15px;">🚀 Getting Started</h3>
+            <ol style="color: #666; line-height: 1.8;">
+                <li><strong>Text Input:</strong> Type your question in the input field and press Enter or click Send</li>
+                <li><strong>Voice Input:</strong> Click the microphone button, speak your question, then click stop</li>
+                <li><strong>Smart Routing:</strong> The system automatically selects the best agent for your query</li>
+                <li><strong>Multi-modal:</strong> Get text responses and optional voice playback</li>
+            </ol>
+            
+            <h4 style="color: #28a745; margin: 15px 0 10px 0;">💡 Example Queries:</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 10px;">
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 5px; font-size: 14px;">
+                    "Weather in New York"
+                </div>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 5px; font-size: 14px;">
+                    "Latest technology news"
+                </div>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 5px; font-size: 14px;">
+                    "Calculate 25 * 48"
+                </div>
+                <div style="background: #f8f9fa; padding: 10px; border-radius: 5px; font-size: 14px;">
+                    "What is artificial intelligence?"
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; margin-top: 30px; color: white; opacity: 0.8;">
+            <p>Powered by LangChain, OpenAI, and FastAPI | Multi-Agent Architecture</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
